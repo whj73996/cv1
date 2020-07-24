@@ -147,7 +147,7 @@ var tt = function tt() {
     } else {
       return;
     }
-  }, 0);
+  }, 40);
 };
 
 tt(); // let t = setInterval(function () {

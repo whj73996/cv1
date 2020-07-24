@@ -74,7 +74,7 @@ let tt = function tt() {
     } else {
       return;
     }
-  }, 0);
+  }, 40);
 };
 
 tt();
