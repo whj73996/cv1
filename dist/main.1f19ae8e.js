@@ -122,7 +122,7 @@ console.log("hi");
 var html = document.querySelector("#html");
 var style = document.querySelector("#style");
 var n = -1;
-var string = "\n/*\n        Hi,\u6211\u662F\u5C0F\u6C6A\n        \u4E00\u540D\u524D\u7AEF\u5DE5\u7A0B\u5E08\n        \u63A5\u4E0B\u6765\u6211\u6765\u6F14\u793A\u4E00\u4E0B\u6211\u7684\u524D\u7AEF\u529F\u5E95\n\n        \u9996\u5148\u6211\u9700\u8981\u51C6\u5907\u4E00\u4E2Adiv\n*/\n\n#div{\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5)\n}\n\n/*\u628A\u4ED6\u53D8\u5706*/\n\n#div{\n  border-radius: 50%\n}\n\n/*\u586B\u4E0A\u592A\u6781\u8272*/\n\n#div{\n  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)\n}\n\n/*\u592A\u6781\u751F\u4E24\u4EEA*/\n\n#div::before {\n  background-color: #fff\n}\ndiv::after {\n  background-color: #000\n}\n\n/*\u4E24\u4EEA\u751F\u516B\u5366*/\n#div::before {\n  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%)\n}\ndiv::after {\n  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%)}\n";
+var string = "\n/*\n        Hi,\u6211\u662F\u5C0F\u6C6A\n        \u4E00\u540D\u524D\u7AEF\u5DE5\u7A0B\u5E08\n        \u63A5\u4E0B\u6765\u6211\u6765\u6F14\u793A\u4E00\u4E0B\u6211\u7684\u524D\u7AEF\u529F\u5E95\n\n        \u9996\u5148\u6211\u9700\u8981\u51C6\u5907\u4E00\u4E2Adiv\n*/\n\n#div{\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5)\n}\n\n/*\u628A\u4ED6\u53D8\u5706*/\n\n#div{\n  border-radius: 50%\n}\n\n/*\u586B\u4E0A\u592A\u6781\u8272*/\n\n#div{\n  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)\n}\n\n/*\u592A\u6781\u751F\u4E24\u4EEA*/\n\n#div::before {\n  background-color: #fff\n}\ndiv::after {\n  background-color: #000\n}\n\n/*\u4E24\u4EEA\u751F\u516B\u5366*/\n\n#div::before {\n  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%)\n}\ndiv::after {\n  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%)}\n\n/*\u8BA9\u4ED6\u52A8\u8D77\u6765*/\n\n#div{\n  animation: rotate 2s infinite\n}\n";
 var str2 = "";
 console.log(string.length);
 
@@ -147,7 +147,7 @@ var tt = function tt() {
     } else {
       return;
     }
-  }, 30);
+  }, 0);
 };
 
 tt(); // let t = setInterval(function () {
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54015" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51083" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -37,12 +37,20 @@ div::after {
 }
 
 /*两仪生八卦*/
+
 #div::before {
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%)
 }
 div::after {
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%)}
+
+/*让他动起来*/
+
+#div{
+  animation: rotate 2s infinite
+}
 `;
+
 let str2 = "";
 console.log(string.length);
 
@@ -66,7 +74,7 @@ let tt = function tt() {
     } else {
       return;
     }
-  }, 30);
+  }, 0);
 };
 
 tt();
